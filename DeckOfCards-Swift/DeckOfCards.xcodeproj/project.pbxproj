@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0650917E1A53317C00901D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650917D1A53317C00901D69 /* AppDelegate.swift */; };
+		065091801A53317C00901D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650917F1A53317C00901D69 /* ViewController.swift */; };
+		065091831A53317C00901D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065091811A53317C00901D69 /* Main.storyboard */; };
+		065091851A53317C00901D69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065091841A53317C00901D69 /* Images.xcassets */; };
+		065091881A53317C00901D69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065091861A53317C00901D69 /* LaunchScreen.xib */; };
+		0650919F1A5331CF00901D69 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650919E1A5331CF00901D69 /* Card.swift */; };
+		065091A21A5339B800901D69 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065091A11A5339B800901D69 /* Deck.swift */; };
+		065091A71A53476400901D69 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065091A51A53476400901D69 /* CardTests.swift */; };
+		065091A81A53486B00901D69 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650919E1A5331CF00901D69 /* Card.swift */; };
+		065091A91A53486E00901D69 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065091A11A5339B800901D69 /* Deck.swift */; };
+		065091AC1A53639600901D69 /* DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065091AA1A53639600901D69 /* DeckTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0650918E1A53317C00901D69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065091701A53317C00901D69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 065091771A53317C00901D69;
+			remoteInfo = DeckOfCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065091781A53317C00901D69 /* DeckOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0650917C1A53317C00901D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0650917D1A53317C00901D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0650917F1A53317C00901D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		065091821A53317C00901D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		065091841A53317C00901D69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		065091871A53317C00901D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0650918D1A53317C00901D69 /* DeckOfCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckOfCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		065091921A53317C00901D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0650919E1A5331CF00901D69 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Classes/Card.swift; sourceTree = "<group>"; };
+		065091A11A5339B800901D69 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Classes/Deck.swift; sourceTree = "<group>"; };
+		065091A51A53476400901D69 /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardTests.swift; path = Classes/CardTests.swift; sourceTree = "<group>"; };
+		065091AA1A53639600901D69 /* DeckTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeckTests.swift; path = Classes/DeckTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		065091751A53317C00901D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0650918A1A53317C00901D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0650916F1A53317C00901D69 = {
+			isa = PBXGroup;
+			children = (
+				0650917A1A53317C00901D69 /* DeckOfCards */,
+				065091901A53317C00901D69 /* DeckOfCardsTests */,
+				065091791A53317C00901D69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		065091791A53317C00901D69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				065091781A53317C00901D69 /* DeckOfCards.app */,
+				0650918D1A53317C00901D69 /* DeckOfCardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0650917A1A53317C00901D69 /* DeckOfCards */ = {
+			isa = PBXGroup;
+			children = (
+				0650919D1A53319200901D69 /* Classes */,
+				0650917D1A53317C00901D69 /* AppDelegate.swift */,
+				0650917F1A53317C00901D69 /* ViewController.swift */,
+				065091811A53317C00901D69 /* Main.storyboard */,
+				065091841A53317C00901D69 /* Images.xcassets */,
+				065091861A53317C00901D69 /* LaunchScreen.xib */,
+				0650917B1A53317C00901D69 /* Supporting Files */,
+			);
+			path = DeckOfCards;
+			sourceTree = "<group>";
+		};
+		0650917B1A53317C00901D69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0650917C1A53317C00901D69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		065091901A53317C00901D69 /* DeckOfCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				065091A41A5341F100901D69 /* Classes */,
+				065091911A53317C00901D69 /* Supporting Files */,
+			);
+			path = DeckOfCardsTests;
+			sourceTree = "<group>";
+		};
+		065091911A53317C00901D69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				065091921A53317C00901D69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0650919D1A53319200901D69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0650919E1A5331CF00901D69 /* Card.swift */,
+				065091A11A5339B800901D69 /* Deck.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		065091A41A5341F100901D69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				065091A51A53476400901D69 /* CardTests.swift */,
+				065091AA1A53639600901D69 /* DeckTests.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		065091771A53317C00901D69 /* DeckOfCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065091971A53317C00901D69 /* Build configuration list for PBXNativeTarget "DeckOfCards" */;
+			buildPhases = (
+				065091741A53317C00901D69 /* Sources */,
+				065091751A53317C00901D69 /* Frameworks */,
+				065091761A53317C00901D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeckOfCards;
+			productName = DeckOfCards;
+			productReference = 065091781A53317C00901D69 /* DeckOfCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0650918C1A53317C00901D69 /* DeckOfCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0650919A1A53317C00901D69 /* Build configuration list for PBXNativeTarget "DeckOfCardsTests" */;
+			buildPhases = (
+				065091891A53317C00901D69 /* Sources */,
+				0650918A1A53317C00901D69 /* Frameworks */,
+				0650918B1A53317C00901D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0650918F1A53317C00901D69 /* PBXTargetDependency */,
+			);
+			name = DeckOfCardsTests;
+			productName = DeckOfCardsTests;
+			productReference = 0650918D1A53317C00901D69 /* DeckOfCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		065091701A53317C00901D69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Andrea Prearo";
+				TargetAttributes = {
+					065091771A53317C00901D69 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0650918C1A53317C00901D69 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 065091771A53317C00901D69;
+					};
+				};
+			};
+			buildConfigurationList = 065091731A53317C00901D69 /* Build configuration list for PBXProject "DeckOfCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0650916F1A53317C00901D69;
+			productRefGroup = 065091791A53317C00901D69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				065091771A53317C00901D69 /* DeckOfCards */,
+				0650918C1A53317C00901D69 /* DeckOfCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		065091761A53317C00901D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065091831A53317C00901D69 /* Main.storyboard in Resources */,
+				065091881A53317C00901D69 /* LaunchScreen.xib in Resources */,
+				065091851A53317C00901D69 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0650918B1A53317C00901D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		065091741A53317C00901D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065091A21A5339B800901D69 /* Deck.swift in Sources */,
+				065091801A53317C00901D69 /* ViewController.swift in Sources */,
+				0650919F1A5331CF00901D69 /* Card.swift in Sources */,
+				0650917E1A53317C00901D69 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		065091891A53317C00901D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065091AC1A53639600901D69 /* DeckTests.swift in Sources */,
+				065091A91A53486E00901D69 /* Deck.swift in Sources */,
+				065091A71A53476400901D69 /* CardTests.swift in Sources */,
+				065091A81A53486B00901D69 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0650918F1A53317C00901D69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 065091771A53317C00901D69 /* DeckOfCards */;
+			targetProxy = 0650918E1A53317C00901D69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		065091811A53317C00901D69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065091821A53317C00901D69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		065091861A53317C00901D69 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065091871A53317C00901D69 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		065091951A53317C00901D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		065091961A53317C00901D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		065091981A53317C00901D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		065091991A53317C00901D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0650919B1A53317C00901D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeckOfCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckOfCards.app/DeckOfCards";
+			};
+			name = Debug;
+		};
+		0650919C1A53317C00901D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeckOfCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckOfCards.app/DeckOfCards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		065091731A53317C00901D69 /* Build configuration list for PBXProject "DeckOfCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065091951A53317C00901D69 /* Debug */,
+				065091961A53317C00901D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		065091971A53317C00901D69 /* Build configuration list for PBXNativeTarget "DeckOfCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065091981A53317C00901D69 /* Debug */,
+				065091991A53317C00901D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0650919A1A53317C00901D69 /* Build configuration list for PBXNativeTarget "DeckOfCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0650919B1A53317C00901D69 /* Debug */,
+				0650919C1A53317C00901D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 065091701A53317C00901D69 /* Project object */;
+}

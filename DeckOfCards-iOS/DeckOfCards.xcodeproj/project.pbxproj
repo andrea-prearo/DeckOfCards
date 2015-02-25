@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		691AC1FC183D451E00BDB2DA /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 691AC1FB183D451E00BDB2DA /* Card.m */; };
+		691AC1FF183D452A00BDB2DA /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 691AC1FE183D452A00BDB2DA /* Deck.m */; };
+		691AC203183D599800BDB2DA /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 691AC202183D599800BDB2DA /* CardTests.m */; };
+		691AC206183D69EA00BDB2DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 691AC205183D69EA00BDB2DA /* AppDelegate.m */; };
+		691AC209183D84A200BDB2DA /* DeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 691AC208183D84A200BDB2DA /* DeckTests.m */; };
+		6982809E183D42DE0061F898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6982809D183D42DE0061F898 /* Foundation.framework */; };
+		698280A0183D42DE0061F898 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6982809F183D42DE0061F898 /* CoreGraphics.framework */; };
+		698280A2183D42DE0061F898 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698280A1183D42DE0061F898 /* UIKit.framework */; };
+		698280A8183D42DE0061F898 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 698280A6183D42DE0061F898 /* InfoPlist.strings */; };
+		698280AA183D42DE0061F898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 698280A9183D42DE0061F898 /* main.m */; };
+		698280B0183D42DE0061F898 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698280AF183D42DE0061F898 /* Images.xcassets */; };
+		698280B7183D42DE0061F898 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698280B6183D42DE0061F898 /* XCTest.framework */; };
+		698280B8183D42DE0061F898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6982809D183D42DE0061F898 /* Foundation.framework */; };
+		698280B9183D42DE0061F898 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698280A1183D42DE0061F898 /* UIKit.framework */; };
+		698280C1183D42DE0061F898 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 698280BF183D42DE0061F898 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		698280BA183D42DE0061F898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69828092183D42DE0061F898 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69828099183D42DE0061F898;
+			remoteInfo = DeckOfCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		691AC1FA183D451E00BDB2DA /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Classes/Card.h; sourceTree = "<group>"; };
+		691AC1FB183D451E00BDB2DA /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Classes/Card.m; sourceTree = "<group>"; };
+		691AC1FD183D452A00BDB2DA /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Classes/Deck.h; sourceTree = "<group>"; };
+		691AC1FE183D452A00BDB2DA /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Classes/Deck.m; sourceTree = "<group>"; };
+		691AC202183D599800BDB2DA /* CardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardTests.m; path = Classes/CardTests.m; sourceTree = "<group>"; };
+		691AC204183D69EA00BDB2DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		691AC205183D69EA00BDB2DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		691AC208183D84A200BDB2DA /* DeckTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckTests.m; path = Classes/DeckTests.m; sourceTree = "<group>"; };
+		6982809A183D42DE0061F898 /* DeckOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6982809D183D42DE0061F898 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6982809F183D42DE0061F898 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		698280A1183D42DE0061F898 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		698280A5183D42DE0061F898 /* DeckOfCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeckOfCards-Info.plist"; sourceTree = "<group>"; };
+		698280A7183D42DE0061F898 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		698280A9183D42DE0061F898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		698280AB183D42DE0061F898 /* DeckOfCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfCards-Prefix.pch"; sourceTree = "<group>"; };
+		698280AF183D42DE0061F898 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		698280B5183D42DE0061F898 /* DeckOfCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckOfCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		698280B6183D42DE0061F898 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		698280BE183D42DE0061F898 /* DeckOfCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeckOfCardsTests-Info.plist"; sourceTree = "<group>"; };
+		698280C0183D42DE0061F898 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69828097183D42DE0061F898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698280A0183D42DE0061F898 /* CoreGraphics.framework in Frameworks */,
+				698280A2183D42DE0061F898 /* UIKit.framework in Frameworks */,
+				6982809E183D42DE0061F898 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		698280B2183D42DE0061F898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698280B7183D42DE0061F898 /* XCTest.framework in Frameworks */,
+				698280B9183D42DE0061F898 /* UIKit.framework in Frameworks */,
+				698280B8183D42DE0061F898 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		691AC1F3183D432B00BDB2DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				691AC1FA183D451E00BDB2DA /* Card.h */,
+				691AC1FB183D451E00BDB2DA /* Card.m */,
+				691AC1FD183D452A00BDB2DA /* Deck.h */,
+				691AC1FE183D452A00BDB2DA /* Deck.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		691AC200183D595A00BDB2DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				691AC202183D599800BDB2DA /* CardTests.m */,
+				691AC208183D84A200BDB2DA /* DeckTests.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		69828091183D42DE0061F898 = {
+			isa = PBXGroup;
+			children = (
+				698280A3183D42DE0061F898 /* DeckOfCards */,
+				698280BC183D42DE0061F898 /* DeckOfCardsTests */,
+				6982809C183D42DE0061F898 /* Frameworks */,
+				6982809B183D42DE0061F898 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6982809B183D42DE0061F898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6982809A183D42DE0061F898 /* DeckOfCards.app */,
+				698280B5183D42DE0061F898 /* DeckOfCardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6982809C183D42DE0061F898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6982809D183D42DE0061F898 /* Foundation.framework */,
+				6982809F183D42DE0061F898 /* CoreGraphics.framework */,
+				698280A1183D42DE0061F898 /* UIKit.framework */,
+				698280B6183D42DE0061F898 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		698280A3183D42DE0061F898 /* DeckOfCards */ = {
+			isa = PBXGroup;
+			children = (
+				691AC204183D69EA00BDB2DA /* AppDelegate.h */,
+				691AC205183D69EA00BDB2DA /* AppDelegate.m */,
+				691AC1F3183D432B00BDB2DA /* Classes */,
+				698280AF183D42DE0061F898 /* Images.xcassets */,
+				698280A4183D42DE0061F898 /* Supporting Files */,
+			);
+			path = DeckOfCards;
+			sourceTree = "<group>";
+		};
+		698280A4183D42DE0061F898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				698280A5183D42DE0061F898 /* DeckOfCards-Info.plist */,
+				698280A6183D42DE0061F898 /* InfoPlist.strings */,
+				698280A9183D42DE0061F898 /* main.m */,
+				698280AB183D42DE0061F898 /* DeckOfCards-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		698280BC183D42DE0061F898 /* DeckOfCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				691AC200183D595A00BDB2DA /* Classes */,
+				698280BD183D42DE0061F898 /* Supporting Files */,
+			);
+			path = DeckOfCardsTests;
+			sourceTree = "<group>";
+		};
+		698280BD183D42DE0061F898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				698280BE183D42DE0061F898 /* DeckOfCardsTests-Info.plist */,
+				698280BF183D42DE0061F898 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69828099183D42DE0061F898 /* DeckOfCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 698280C6183D42DE0061F898 /* Build configuration list for PBXNativeTarget "DeckOfCards" */;
+			buildPhases = (
+				69828096183D42DE0061F898 /* Sources */,
+				69828097183D42DE0061F898 /* Frameworks */,
+				69828098183D42DE0061F898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeckOfCards;
+			productName = DeckOfCards;
+			productReference = 6982809A183D42DE0061F898 /* DeckOfCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		698280B4183D42DE0061F898 /* DeckOfCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 698280C9183D42DE0061F898 /* Build configuration list for PBXNativeTarget "DeckOfCardsTests" */;
+			buildPhases = (
+				698280B1183D42DE0061F898 /* Sources */,
+				698280B2183D42DE0061F898 /* Frameworks */,
+				698280B3183D42DE0061F898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				698280BB183D42DE0061F898 /* PBXTargetDependency */,
+			);
+			name = DeckOfCardsTests;
+			productName = DeckOfCardsTests;
+			productReference = 698280B5183D42DE0061F898 /* DeckOfCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69828092183D42DE0061F898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Andrea Prearo";
+				TargetAttributes = {
+					698280B4183D42DE0061F898 = {
+						TestTargetID = 69828099183D42DE0061F898;
+					};
+				};
+			};
+			buildConfigurationList = 69828095183D42DE0061F898 /* Build configuration list for PBXProject "DeckOfCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 69828091183D42DE0061F898;
+			productRefGroup = 6982809B183D42DE0061F898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69828099183D42DE0061F898 /* DeckOfCards */,
+				698280B4183D42DE0061F898 /* DeckOfCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69828098183D42DE0061F898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698280A8183D42DE0061F898 /* InfoPlist.strings in Resources */,
+				698280B0183D42DE0061F898 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		698280B3183D42DE0061F898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698280C1183D42DE0061F898 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69828096183D42DE0061F898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				691AC206183D69EA00BDB2DA /* AppDelegate.m in Sources */,
+				691AC1FC183D451E00BDB2DA /* Card.m in Sources */,
+				691AC1FF183D452A00BDB2DA /* Deck.m in Sources */,
+				698280AA183D42DE0061F898 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		698280B1183D42DE0061F898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				691AC209183D84A200BDB2DA /* DeckTests.m in Sources */,
+				691AC203183D599800BDB2DA /* CardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		698280BB183D42DE0061F898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69828099183D42DE0061F898 /* DeckOfCards */;
+			targetProxy = 698280BA183D42DE0061F898 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		698280A6183D42DE0061F898 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				698280A7183D42DE0061F898 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		698280BF183D42DE0061F898 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				698280C0183D42DE0061F898 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		698280C4183D42DE0061F898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		698280C5183D42DE0061F898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		698280C7183D42DE0061F898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeckOfCards/DeckOfCards-Prefix.pch";
+				INFOPLIST_FILE = "DeckOfCards/DeckOfCards-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		698280C8183D42DE0061F898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeckOfCards/DeckOfCards-Prefix.pch";
+				INFOPLIST_FILE = "DeckOfCards/DeckOfCards-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		698280CA183D42DE0061F898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeckOfCards.app/DeckOfCards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeckOfCards/DeckOfCards-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DeckOfCardsTests/DeckOfCardsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		698280CB183D42DE0061F898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeckOfCards.app/DeckOfCards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeckOfCards/DeckOfCards-Prefix.pch";
+				INFOPLIST_FILE = "DeckOfCardsTests/DeckOfCardsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69828095183D42DE0061F898 /* Build configuration list for PBXProject "DeckOfCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				698280C4183D42DE0061F898 /* Debug */,
+				698280C5183D42DE0061F898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		698280C6183D42DE0061F898 /* Build configuration list for PBXNativeTarget "DeckOfCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				698280C7183D42DE0061F898 /* Debug */,
+				698280C8183D42DE0061F898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		698280C9183D42DE0061F898 /* Build configuration list for PBXNativeTarget "DeckOfCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				698280CA183D42DE0061F898 /* Debug */,
+				698280CB183D42DE0061F898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69828092183D42DE0061F898 /* Project object */;
+}
