@@ -48,8 +48,8 @@
 	Card *card2 = [self.deck dealOne];
 	NSUInteger len2 = self.deck.size;
 	XCTAssertFalse([card1 isEqual:card2], @"Card has already been dealt");
-	XCTAssertTrue(len0 - len1 == 1, @"Dealt card has not been removed from the deck");
-	XCTAssertTrue(len1 - len2 == 1, @"Dealt card has not been removed from the deck");
+	XCTAssertEqual(len0 - len1, 1, @"Dealt card has not been removed from the deck");
+	XCTAssertEqual(len1 - len2, 1, @"Dealt card has not been removed from the deck");
 }
 
 - (void)testNoMoreCards

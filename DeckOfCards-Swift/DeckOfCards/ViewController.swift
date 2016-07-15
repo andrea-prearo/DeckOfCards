@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var deck = Deck()
-        println("New deck ready.")
+        let deck = Deck()
+        print("New deck ready.")
         deck.shuffle()
-        println("Shuffled deck.")
-        for i in 1 ... 10 {
-            println("Dealt: \(deck.dealOne()!.description). \(deck.dealtCards.count) card(s) dealt. \(deck.size) remaining.")
+        print("Shuffled deck.")
+        for _ in 1 ... 10 {
+            print("Dealt: \(deck.dealOne()!.description). \(deck.dealtCards.count) card(s) dealt. \(deck.size) remaining.")
         }
     }
 

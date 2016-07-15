@@ -19,7 +19,7 @@ class CardTests: XCTestCase {
     }
 
     func testInvalidCard() {
-        var card = Card(suit: Suit(rawValue: -100), rank: Rank(rawValue: -100))
+        let card = Card(suit: Suit(rawValue: -100), rank: Rank(rawValue: -100))
         XCTAssertTrue(card.suit == nil, "A card should return Suit.Invalid for invalid suit values")
         XCTAssertTrue(card.rank == nil, "A card should return Rank.Invalid for invalid rank values")
     }

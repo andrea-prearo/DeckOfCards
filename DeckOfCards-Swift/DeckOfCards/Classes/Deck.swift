@@ -32,9 +32,9 @@ public class Deck {
         var remainingCards = self.remainingCards
         let count = self.size
         var j = 0
-        for i in reverse(1 ... count - 1) {
-            j = Int(arc4random_uniform(i + 1))
-            swap(&remainingCards[j], &remainingCards[i])
+        for i in (1 ... count - 1).reverse() {
+            j = Int(arc4random_uniform(UInt32(i + 1)))
+            (remainingCards[j], remainingCards[i]) = (remainingCards[i], remainingCards[j])
         }
         self.remainingCards = remainingCards
     }
@@ -44,8 +44,8 @@ public class Deck {
         case let x where x == 0:
             return nil
         default:
-            var index = 0
-            var card = self.remainingCards[index]
+            let index = 0
+            let card = self.remainingCards[index]
             self.remainingCards.removeAtIndex(index)
             self.dealtCards.append(card)
             return card
@@ -64,7 +64,7 @@ public class Deck {
     var description: String {
         var descr = ""
         let size = self.size
-        for (index, card) in enumerate(self.remainingCards) {
+        for (index, card) in self.remainingCards.enumerate() {
             descr += "Card \(index) of \(size): \(card.description)"
         }
         return descr

@@ -35,10 +35,12 @@ class DeckTests: XCTestCase {
         let card2 = self.deck?.dealOne()
         let len2 = self.deck?.size
         XCTAssertFalse(card1 == card2, "Deck has not been shuffled")
+        XCTAssertEqual(len0! - len1!, 1, "Dealt card has not been removed from the deck")
+        XCTAssertEqual(len1! - len2!, 1, "Dealt card has not been removed from the deck")
     }
 
     func testNoMoreCards() {
-        for i in 1 ... self.deck!.size {
+        for _ in 1 ... self.deck!.size {
             self.deck?.dealOne()
         }
         let card = self.deck?.dealOne()

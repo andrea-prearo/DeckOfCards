@@ -32,8 +32,8 @@ static NSArray *_rankNames;
 		
 		if (_suitNames.count != numberOfSuits) {
 			@throw([NSException exceptionWithName:@"InvalidSuitsException"
-																		 reason:@"Number of suit enums and names doesn't match"
-																	 userInfo:nil]);
+                                           reason:@"Number of suit enums and names doesn't match"
+                                         userInfo:nil]);
 		}
 	}
 	return _suitNames;
@@ -46,8 +46,8 @@ static NSArray *_rankNames;
 		
 		if (_rankNames.count != numberOfRanks) {
 			@throw([NSException exceptionWithName:@"InvalidRanksException"
-																		 reason:@"Number of rank enums and names doesn't match"
-																	 userInfo:nil]);
+                                           reason:@"Number of rank enums and names doesn't match"
+                                         userInfo:nil]);
 		}
 	}
 	return _rankNames;
@@ -58,8 +58,8 @@ static NSArray *_rankNames;
 
 - (id)init {
 	@throw([NSException exceptionWithName:@"InvalidCardException"
-																 reason:@"A card needs to specify a suit and a rank"
-															 userInfo:nil]);
+                                   reason:@"A card needs to specify a suit and a rank"
+                                 userInfo:nil]);
 	return nil;
 }
 
@@ -82,16 +82,16 @@ static NSArray *_rankNames;
 - (void)validateSuit:(Suit)suit {
 	if (!NSLocationInRange(suit, NSMakeRange(0, numberOfSuits))) {
 		@throw([NSException exceptionWithName:@"InvalidCardException"
-																	 reason:@"Invalid suit"
-																 userInfo:nil]);
+                                       reason:@"Invalid suit"
+                                     userInfo:nil]);
 	}
 }
 
 - (void)validateRank:(Rank)rank {
 	if (!NSLocationInRange(rank, NSMakeRange(0, numberOfRanks))) {
 		@throw([NSException exceptionWithName:@"InvalidCardException"
-																	 reason:@"Invalid rank"
-																 userInfo:nil]);
+                                       reason:@"Invalid rank"
+                                     userInfo:nil]);
 	}
 }
 

@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  DeckOfCards
 //
-//  Created by Andrea Prearo on 11/20/13.
-//  Copyright (c) 2013 Andrea Prearo. All rights reserved.
+//  Created by Andrea Prearo on 7/15/16.
+//
 //
 
 #import <UIKit/UIKit.h>
@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+
 @end
+
