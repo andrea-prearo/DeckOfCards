@@ -5,7 +5,7 @@ The project implements three main classes:
 - ```Deck```, to model the deck as a Card container  
 - ```Game```, to model the game logic  
 
-The code has been developed and tested using GHC 7.8.3.  
+The code has been developed and tested using GHC 8.0.1.  
 
 Unit tests are provided using the [Hspec](http://hspec.github.io/) framework.  
 Execute ```cabal test``` to run the test suite.  

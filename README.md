@@ -1,4 +1,5 @@
 # DeckOfCards Samples Collection
+A small playground to experiment with different languages and coding styles
 
 ## DeckOfCards-iOS
 *DeckOfCards* Objective-C implementation, located in ```DeckOfCards-iOS```.  

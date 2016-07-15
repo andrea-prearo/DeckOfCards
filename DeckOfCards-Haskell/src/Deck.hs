@@ -1,8 +1,8 @@
 module Deck
 ( maxDeckSize
 , fisherYates
-,	Deck(..)
-,	mkDeck
+, Deck(..)
+, mkDeck
 , shuffle
 , Deck.size
 , dealOne
@@ -32,34 +32,34 @@ fisherYates gen l =
     initial x gen = (singleton 0 x, gen)
 
 data Deck = Deck { remainingCards :: [Card], dealtCards :: [Card] }
-						deriving (Show)
+            deriving (Show)
 
 mkDeck :: Deck
 mkDeck = Deck {
-						remainingCards = (\x y -> Card x y) <$> [Clubs .. Spades] <*> [Ace .. King],
-						dealtCards = []
-				 }
+            remainingCards = (\x y -> Card x y) <$> [Clubs .. Spades] <*> [Ace .. King],
+            dealtCards = []
+         }
 
 shuffle :: Deck -> Deck
 shuffle deck = Deck {
-									remainingCards = fst $ fisherYates (mkStdGen maxDeckSize) (remainingCards deck),
-									dealtCards = []
-							 }
+                  remainingCards = fst $ fisherYates (mkStdGen maxDeckSize) (remainingCards deck),
+                  dealtCards = []
+               }
 
 size :: Deck -> Int
 size deck = length $ remainingCards deck
 
 dealOne :: Deck -> (Deck, Maybe Card)
 dealOne deck | (Deck.size deck == 0) = (deck, Nothing)
-						 | otherwise = (deck', Just card)
-						 where
-						 	card =  head $ remainingCards deck
-						 	deck' = Deck {
-								remainingCards = tail $ remainingCards deck,
-								dealtCards = dealtCards deck ++ [card]
-							}
+             | otherwise = (deck', Just card)
+             where
+              card =  head $ remainingCards deck
+              deck' = Deck {
+                remainingCards = tail $ remainingCards deck,
+                dealtCards = dealtCards deck ++ [card]
+              }
 
 getCard :: Deck -> Int -> Maybe Card
 getCard deck n | n < 0 = Nothing
-							 | n > (maxDeckSize-1) = Nothing
-							 | otherwise = Just $ (remainingCards deck) !! n
+               | n > (maxDeckSize-1) = Nothing
+               | otherwise = Just $ (remainingCards deck) !! n

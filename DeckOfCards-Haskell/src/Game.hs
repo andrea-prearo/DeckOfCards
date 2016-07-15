@@ -13,31 +13,31 @@ data GameState = GameState { deck :: Deck, card :: Maybe Card }
 
 instance Show GameState where
    show (GameState deck card) | (size deck == 0) = show $ "All cards have been dealt"
-															| otherwise = show $ "Dealt: " ++ (show $ fromJust card) ++ ". " ++ (show (length (dealtCards deck))) ++ " card(s) dealt. " ++ (show (size deck)) ++" remaining."
+                              | otherwise = show $ "Dealt: " ++ (show $ fromJust card) ++ ". " ++ (show (length (dealtCards deck))) ++ " card(s) dealt. " ++ (show (size deck)) ++" remaining."
 
 initGameState :: GameState
 initGameState = GameState {
-									deck = shuffle mkDeck,
-									card = Nothing
-								}
+                  deck = shuffle mkDeck,
+                  card = Nothing
+                }
 
 playRound :: GameState -> GameState
 playRound gameState = GameState {
-												deck = deck',
-												card = card'
-											}
-											where
-												(deck', card') = dealOne (deck gameState)
+                        deck = deck',
+                        card = card'
+                      }
+                      where
+                        (deck', card') = dealOne (deck gameState)
 
 playRounds :: Int -> GameState -> Writer [String] GameState
 playRounds n gameState | (n == 0) = do
-						 						return gameState'
-											 | ((size $ deck gameState) == 0) = do
-						 						return gameState'
-									 	   | otherwise = do
-									 			tell [show gameState']
-									 			playRounds (n-1) gameState'
-									 		where gameState' = playRound gameState
+                        return gameState'
+                       | ((size $ deck gameState) == 0) = do
+                        return gameState'
+                       | otherwise = do
+                        tell [show gameState']
+                        playRounds (n-1) gameState'
+                      where gameState' = playRound gameState
 
 playGame :: Writer [String] GameState
 playGame = playRounds maxDeckSize initGameState
