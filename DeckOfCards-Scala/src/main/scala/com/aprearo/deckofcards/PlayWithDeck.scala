@@ -1,4 +1,4 @@
-package com.arctouch.deckofcards
+package com.aprearo.deckofcards
 
 object PlayWithDeck {
   def main(args: Array[String]) {

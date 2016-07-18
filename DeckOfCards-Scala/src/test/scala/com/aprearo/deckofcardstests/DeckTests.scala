@@ -1,8 +1,8 @@
-package com.arctouch.deckofcardstests
+package com.aprearo.deckofcardstests
 
 import org.specs2.mutable._
 import org.specs2.matcher._
-import com.arctouch.deckofcards._
+import com.aprearo.deckofcards._
 
 class DeckTests extends Specification {
 

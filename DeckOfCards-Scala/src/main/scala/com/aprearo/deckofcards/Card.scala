@@ -1,4 +1,4 @@
-package com.arctouch.deckofcards
+package com.aprearo.deckofcards
 
 object Suit extends Enumeration {
   type Suit = Value

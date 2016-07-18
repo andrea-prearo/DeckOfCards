@@ -1,4 +1,4 @@
-package com.arctouch.deckofcards
+package com.aprearo.deckofcards
 
 class Deck {
   var remainingCards = List[Card]()
