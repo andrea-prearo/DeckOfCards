@@ -22,7 +22,8 @@
     NSLog(@"New deck ready.");
     [deck shuffle];
     NSLog(@"Shuffled deck.");
-    for (int i = 0; i < 10; i++) {
+    NSUInteger size = deck.size;
+    for (int i = 0; i < size; i++) {
         NSLog(@"Dealt: %@. %lu card(s) dealt. %lu remaining.", [deck dealOne],
               deck.dealtCards.count, deck.remainingCards.count);
     }

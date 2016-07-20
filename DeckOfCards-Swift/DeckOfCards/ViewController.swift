@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         print("New deck ready.")
         deck.shuffle()
         print("Shuffled deck.")
-        for _ in 1 ... 10 {
+        let size = deck.size
+        for _ in 0..<size {
             print("Dealt: \(deck.dealOne()!.description). \(deck.dealtCards.count) card(s) dealt. \(deck.size) remaining.")
         }
     }

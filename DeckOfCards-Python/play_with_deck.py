@@ -12,5 +12,5 @@ if __name__ == "__main__":
     print 'New deck ready.'
     deck.shuffle()
     print 'Shuffled deck.'
-    for suit in range(0, 10):
+    for suit in range(0, deck.size):
         deal_a_card()

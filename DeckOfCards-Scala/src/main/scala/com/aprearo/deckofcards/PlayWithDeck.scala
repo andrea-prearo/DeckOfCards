@@ -6,6 +6,6 @@ object PlayWithDeck {
     println("New deck ready.")
     deck.shuffle
     println("Shuffled deck.")
-    Range(0, 10).foreach(_ => println(s"Dealt: ${deck.dealOne.toString()}. ${deck.dealtCards.size} card(s) dealt. ${deck.size} remaining."))
+    Range(0, deck.size).foreach(_ => println(s"Dealt: ${deck.dealOne.toString()}. ${deck.dealtCards.size} card(s) dealt. ${deck.size} remaining."))
   }
 }
