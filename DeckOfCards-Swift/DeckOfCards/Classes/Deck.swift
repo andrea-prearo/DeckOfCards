@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Deck {
+open class Deck {
     var size: Int {
         get { return self.remainingCards.count }
     }
@@ -29,14 +29,12 @@ public class Deck {
         // Implementation of Fisher–Yates shuffle algorithm
         // http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
         
-        var remainingCards = self.remainingCards
         let count = self.size
         var j = 0
-        for i in (1 ... count - 1).reverse() {
+        for i in (1 ... count - 1).reversed() {
             j = Int(arc4random_uniform(UInt32(i + 1)))
             (remainingCards[j], remainingCards[i]) = (remainingCards[i], remainingCards[j])
         }
-        self.remainingCards = remainingCards
     }
 
     func dealOne() -> Card? {
@@ -46,13 +44,13 @@ public class Deck {
         default:
             let index = 0
             let card = self.remainingCards[index]
-            self.remainingCards.removeAtIndex(index)
+            self.remainingCards.remove(at: index)
             self.dealtCards.append(card)
             return card
         }
     }
 
-    func getCard(index: Int) -> Card? {
+    func getCard(_ index: Int) -> Card? {
         switch index {
         case let x where (1 ... self.size) ~= x:
             return self.remainingCards[index]
@@ -64,7 +62,7 @@ public class Deck {
     var description: String {
         var descr = ""
         let size = self.size
-        for (index, card) in self.remainingCards.enumerate() {
+        for (index, card) in self.remainingCards.enumerated() {
             descr += "Card \(index) of \(size): \(card.description)"
         }
         return descr

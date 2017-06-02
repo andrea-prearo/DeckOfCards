@@ -20,8 +20,8 @@ class CardTests: XCTestCase {
 
     func testInvalidCard() {
         let card = Card(suit: Suit(rawValue: -100), rank: Rank(rawValue: -100))
-        XCTAssertTrue(card.suit == nil, "A card should return Suit.Invalid for invalid suit values")
-        XCTAssertTrue(card.rank == nil, "A card should return Rank.Invalid for invalid rank values")
+        XCTAssertNil(card.suit, "A card should return Suit.Invalid for invalid suit values")
+        XCTAssertNil(card.rank, "A card should return Rank.Invalid for invalid rank values")
     }
 
     func testSuitCount() {
@@ -30,5 +30,13 @@ class CardTests: XCTestCase {
 
     func testRankCount() {
         XCTAssertTrue(numberOfRanks == 13, "A card must define 13 possible ranks")
+    }
+
+    func testEquality() {
+        let card1 = Card(suit: .diamonds, rank: .queen)
+        let card2 = Card(suit: .diamonds, rank: .queen)
+        XCTAssertEqual(card1, card2)
+        let card3 = Card(suit: .diamonds, rank: .ace)
+        XCTAssertNotEqual(card1, card3)
     }
 }

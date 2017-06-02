@@ -36,27 +36,27 @@ let numberOfRanks = 13;
 
 enum Suit: Int {
     case
-        Clubs = 0,
-        Diamonds,
-        Hearts,
-        Spades
+        clubs = 0,
+        diamonds,
+        hearts,
+        spades
 }
 
 enum Rank: Int {
     case
-        Ace = 0,
-        Two,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Jack,
-        Queen,
-        King
+        ace = 0,
+        two,
+        three,
+        four,
+        five,
+        six,
+        seven,
+        eight,
+        nine,
+        ten,
+        jack,
+        queen,
+        king
 }
 
 class Card {
@@ -73,7 +73,7 @@ class Card {
         self.rank = nil
     }
 
-    func getSuitName(suit: Suit?) -> String {
+    func getSuitName(_ suit: Suit?) -> String {
         switch suit {
         case let x where x == nil:
             return "Invalid suit"
@@ -82,7 +82,7 @@ class Card {
         }
     }
 
-    func getRankName(rank: Rank?) -> String {
+    func getRankName(_ rank: Rank?) -> String {
         switch rank {
         case let x where x == nil:
             return "Invalid rank"
