@@ -18,6 +18,8 @@ class CardTests extends Specification {
       val card1 = new Card(Suit.Diamonds, Rank.Queen)
       val card2 = new Card(Suit.Diamonds, Rank.Queen)
       card1 mustEqual card2
+      val card3 = new Card(Suit.Diamonds, Rank.Ace)
+      card1 mustNotEqual card3
     }
 
   }
