@@ -1,6 +1,10 @@
 # DeckOfCards Samples Collection
 A small playground to experiment with different languages and coding styles
 
+## Features:
+- Multiple languages (Object Oriented and Functional)
+- 100% unit test coverage
+
 ## DeckOfCards-iOS
 *DeckOfCards* Objective-C implementation, located in ```DeckOfCards-iOS```.  
 See ```DeckOfCards-iOS/README.md``` for further details.
@@ -20,3 +24,7 @@ See ```DeckOfCards-Scala/README.md``` for further details.
 ## DeckOfCards-Haskell
 *DeckOfCards* Haskell implementation, located in ```DeckOfCards-Haskell```.  
 See ```DeckOfCards-Haskell/README.md``` for further details.
+
+## DeckOfCards-Java
+*DeckOfCards* Java implementation, located in ```DeckOfCards-Java```.  
+See ```DeckOfCards-Java/README.md``` for further details.
