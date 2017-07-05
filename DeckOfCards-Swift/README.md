@@ -10,4 +10,4 @@ Each class comes with its own unit tests, implemented using the integrated XCTes
 
 The deck shuffle method has been implemented using the [Fisher–Yates shuffle modern_algorithm](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm).  
 
-All the code has been developed and tested using XCode 7.  
+All the code has been developed and tested using `XCode 7`.  

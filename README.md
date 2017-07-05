@@ -28,3 +28,7 @@ See ```DeckOfCards-Haskell/README.md``` for further details.
 ## DeckOfCards-Java
 *DeckOfCards* Java implementation, located in ```DeckOfCards-Java```.  
 See ```DeckOfCards-Java/README.md``` for further details.
+
+## DeckOfCards-Kotlin
+*DeckOfCards* Kotlin implementation, located in ```DeckOfCards-Kotlin```.  
+See ```DeckOfCards-Kotlin/README.md``` for further details.

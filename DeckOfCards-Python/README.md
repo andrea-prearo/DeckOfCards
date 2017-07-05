@@ -4,7 +4,7 @@ The project implements two main classes:
 - ```Card```, to model each individual card  
 - ```Deck```, to model the deck as a Card container  
 
-The code has been developed and tested using Python 2.7.6.  
+The code has been developed and tested using `Python 2.7.6`.  
 
 Unit tests are provided, for each class, and bundled inside a test suite.
 Execute ```python test_suite.py``` to run the test suite, or:  
