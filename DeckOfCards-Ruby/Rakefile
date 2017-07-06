@@ -1,0 +1,11 @@
+require 'rake/testtask'
+
+task :run do
+    ruby "src/play_with_deck.rb"
+end
+
+Rake::TestTask.new do |t|
+  t.test_files = FileList['test/**/*_tests.rb']
+end
+
+task :default => :test
