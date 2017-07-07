@@ -1,18 +1,15 @@
 import unittest
 from deck import Deck
 
-
 class TestDeck(unittest.TestCase):
 
     def setUp(self):
         self.deck = Deck()
 
     def test_shuffle(self):
-        cards1 = self.deck.get_remaining_cards()
-        # print self.deck
+        cards1 = self.deck.cards
         self.deck.shuffle()
-        cards2 = self.deck.get_remaining_cards()
-        # print self.deck
+        cards2 = self.deck.cards
         self.assertFalse(cards1 == cards2, 'Deck has not been shuffled')
 
     def test_deal_one(self):

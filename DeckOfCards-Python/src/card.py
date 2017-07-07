@@ -20,7 +20,6 @@ class Suit:
             raise RuntimeError('Invalid rank')
         return Suit.__suits[suit]
 
-
 class Rank:
     ace = 0
     two = 1
@@ -52,7 +51,6 @@ class Rank:
         if rank not in range(0, Rank.count()):
             raise RuntimeError('Invalid rank')
         return Rank.__ranks[rank]
-
 
 class Card(object):
 

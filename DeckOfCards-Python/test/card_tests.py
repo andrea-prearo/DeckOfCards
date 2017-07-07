@@ -1,7 +1,6 @@
 import unittest
 from card import Card, Suit, Rank
 
-
 class TestCard(unittest.TestCase):
 
     def test_suit_count(self):
