@@ -1,18 +1,17 @@
 package com.aprearo.deckofcards
 
 class Deck {
-  var remainingCards = List[Card]()
-  var dealtCards = List[Card]()
+  var cards = List[Card]()
 
   Suit.values.foreach(suit =>
     Rank.values.foreach(rank =>
-      remainingCards = remainingCards :+ new Card(suit, rank)
+      cards = cards :+ new Card(suit, rank)
     )
   )
 
-  def size: Int = { return remainingCards.size }
+  def size: Int = { return cards.size }
 
-  def shuffle = { remainingCards = util.Random.shuffle(remainingCards) }
+  def shuffle = { cards = util.Random.shuffle(cards) }
 
   def dealOne: Card = {
     if (this.size == 0) {
@@ -20,9 +19,8 @@ class Deck {
       return null
     }
 
-    val card = remainingCards.head
-    remainingCards = remainingCards.tail
-    dealtCards = dealtCards :+ card
+    val card = cards.head
+    cards = cards.tail
     return card
   }
 
@@ -32,6 +30,6 @@ class Deck {
       return null
     }
 
-    return remainingCards(index)
+    return cards(index)
   }
 }

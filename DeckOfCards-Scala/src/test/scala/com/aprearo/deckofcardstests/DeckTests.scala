@@ -8,9 +8,9 @@ class DeckTests extends Specification {
 
   "Deck" should {
     "shuffle all cards" in new deckScope {
-      val cards1 = deck.remainingCards
+      val cards1 = deck.cards
       deck.shuffle
-      val cards2 = deck.remainingCards
+      val cards2 = deck.cards
       cards1 mustNotEqual cards2
     }
 
