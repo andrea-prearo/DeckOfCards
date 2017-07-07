@@ -17,9 +17,9 @@ public class DeckTests {
 
     @Test
     public void testShuffle() {
-        ArrayList<Card> cards1 = new ArrayList<>(deck.getRemainingCards());
+        ArrayList<Card> cards1 = new ArrayList<>(deck.getCards());
         deck.shuffle();
-        ArrayList<Card> cards2 = new ArrayList<>(deck.getRemainingCards());
+        ArrayList<Card> cards2 = new ArrayList<>(deck.getCards());
         assertNotEquals(cards1, cards2);
     }
 

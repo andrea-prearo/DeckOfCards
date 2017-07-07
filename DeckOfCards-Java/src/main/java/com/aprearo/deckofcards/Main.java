@@ -11,7 +11,7 @@ public class Main {
             Card card = deck.dealOne();
             System.out.println(
                 String.format("Dealt: %s. %d card(s) dealt. %d remaining.",
-                    card.toString(), deck.getDealtCards().size(), deck.size()));
+                    card.toString(), i+1, deck.size()));
         }
     }
 }

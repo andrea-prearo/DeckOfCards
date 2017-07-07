@@ -3,41 +3,36 @@ package com.aprearo.deckofcards;
 import java.util.ArrayList;
 
 public class Deck {
-    private ArrayList<Card> remainingCards;
-    private ArrayList<Card> dealtCards;
+    private ArrayList<Card> cards;
 
     public Deck() {
-        remainingCards = new ArrayList<>();
-        dealtCards = new ArrayList<>();
+        cards = new ArrayList<>();
         for (Card.Suit suit : Card.Suit.values()) {
             for (Card.Rank rank : Card.Rank.values()) {
-                remainingCards.add(new Card(suit, rank));
+                cards.add(new Card(suit, rank));
             }
         }
     }
 
-    public ArrayList<Card> getRemainingCards() {
-        return remainingCards;
+    public ArrayList<Card> getCards() {
+        return cards;
     }
 
-    public ArrayList<Card> getDealtCards() {
-        return dealtCards;
-    }
 
     public int size() {
-        return  remainingCards.size();
+        return  cards.size();
     }
 
     public void shuffle() {
         // Implementation of Fisher–Yates shuffle algorithm
         // http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 
-        int n = remainingCards.size();
+        int n = cards.size();
         for (int i = 0; i < n; i++) {
             int random = i + (int) (Math.random() * (n - i));
-            Card randomCard = remainingCards.get(random);
-            remainingCards.set(random, remainingCards.get(i));
-            remainingCards.set(i, randomCard);
+            Card randomCard = cards.get(random);
+            cards.set(random, cards.get(i));
+            cards.set(i, randomCard);
         }
     }
 
@@ -45,16 +40,15 @@ public class Deck {
         if (size() == 0) {
             throw new RuntimeException("All cards have been dealt");
         }
-        Card card = remainingCards.remove(0);
-        dealtCards.add(card);
+        Card card = cards.remove(0);
         return card;
     }
 
     public Card getCard(int index) {
-        if (index < 0 || index >= remainingCards.size()) {
+        if (index < 0 || index >= cards.size()) {
             throw new RuntimeException(String.format("Card index not contained in deck: ", index));
         }
-        return remainingCards.get(index);
+        return cards.get(index);
     }
 
     @Override
@@ -62,7 +56,7 @@ public class Deck {
         StringBuilder builder = new StringBuilder();
         int size = size();
         for (int i = 0; i < size; i ++) {
-            Card card = remainingCards.get(i);
+            Card card = cards.get(i);
             builder.append(String.format("Card %d of %d: %s\n", i, size, card.toString()));
         }
         return builder.toString();
