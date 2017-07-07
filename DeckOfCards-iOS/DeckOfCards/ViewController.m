@@ -24,8 +24,8 @@
     NSLog(@"Shuffled deck.");
     NSUInteger size = deck.size;
     for (int i = 0; i < size; i++) {
-        NSLog(@"Dealt: %@. %lu card(s) dealt. %lu remaining.", [deck dealOne],
-              deck.dealtCards.count, deck.remainingCards.count);
+        NSLog(@"Dealt: %@. %lu card(s) dealt. %d remaining.", [deck dealOne],
+              i+1, deck.size);
     }
 }
 

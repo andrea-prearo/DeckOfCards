@@ -12,18 +12,14 @@
 @interface Deck ()
 
 @property (nonatomic, assign) NSUInteger size;
-
-@property (nonatomic, retain) NSMutableArray *remainingCards;
-@property (nonatomic, retain) NSMutableArray *dealtCards;
+@property (nonatomic, retain) NSMutableArray *cards;
 
 @end
 
 @implementation Deck
 
-@synthesize remainingCards = _remainingCards;
-@synthesize dealtCards = _dealtCards;
-
 @synthesize size = _size;
+@synthesize cards = _cards;
 
 #pragma mark -
 #pragma mark Static methods
@@ -38,15 +34,14 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		_dealtCards = [[NSMutableArray alloc] init];
-		_remainingCards = [[NSMutableArray alloc] init];
+		_cards = [[NSMutableArray alloc] init];
 		for (int suit = 0; suit < numberOfSuits; suit++) {
 			for (int rank = 0; rank < numberOfRanks; rank++) {
-				[_remainingCards addObject:[Card createWithSuit:suit andRank:rank]];
+				[_cards addObject:[Card createWithSuit:suit andRank:rank]];
 			}
 		}
 		
-		_size = _remainingCards.count;
+		_size = _cards.count;
 	}
 	
 	return self;
@@ -56,7 +51,7 @@
 #pragma mark Accessor Methods
 
 - (NSUInteger)size {
-	_size = self.remainingCards.count;
+	_size = self.cards.count;
 	return _size;
 }
 
@@ -66,7 +61,7 @@
 - (NSString *)description {
 	NSMutableString *descr = [NSMutableString stringWithString:@""];
 	NSUInteger size = self.size;
-	[self.remainingCards enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+	[self.cards enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 		[descr appendFormat:@"Card %lu of %lu: %@\n", idx + 1, size, (Card *)obj];
 	}];
 	return descr;
@@ -79,25 +74,24 @@
 	// Implementation of Fisher–Yates shuffle algorithm
 	// http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 	
-	NSUInteger count = self.remainingCards.count;
+	NSUInteger count = self.cards.count;
 	for (NSUInteger i = count - 1; i >= 1; i--) {
 		int j = arc4random_uniform((u_int32_t)(i + 1));
-		[self.remainingCards exchangeObjectAtIndex:j withObjectAtIndex:i];
+		[self.cards exchangeObjectAtIndex:j withObjectAtIndex:i];
 	}
 }
 
 - (Card *)dealOne {
 	if (self.size == 0) {
 		@throw([NSException exceptionWithName:@"InvalidOperationException"
-																	 reason:@"All cards have been dealt"
-																 userInfo:nil]);
+                                       reason:@"All cards have been dealt"
+                                     userInfo:nil]);
 	}
 
 	int index = 0;	
-	Card *card = self.remainingCards[index];
-	[self.remainingCards removeObjectAtIndex:index];
-	[self.dealtCards addObject:card];
-	self.size = self.remainingCards.count;
+	Card *card = self.cards[index];
+	[self.cards removeObjectAtIndex:index];
+	self.size = self.cards.count;
 	
 	return card;
 }
@@ -105,11 +99,11 @@
 - (Card *)getCard:(NSUInteger)index {
 	if (!NSLocationInRange(index, NSMakeRange(0, self.size))) {
 		@throw([NSException exceptionWithName:@"InvalidOperationException"
-																	 reason:[NSString stringWithFormat:@"Card index not contained in deck: %ld", (long)index]
-																 userInfo:nil]);
+                                       reason:[NSString stringWithFormat:@"Card index not contained in deck: %ld", (long)index]
+                                     userInfo:nil]);
 	}
 	
-	return self.remainingCards[index];
+	return self.cards[index];
 }
 
 @end

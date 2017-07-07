@@ -14,8 +14,7 @@
 
 @property (nonatomic, readonly) NSUInteger size;
 
-@property (nonatomic, retain, readonly) NSMutableArray *remainingCards;
-@property (nonatomic, retain, readonly) NSMutableArray *dealtCards;
+@property (nonatomic, retain, readonly) NSMutableArray *cards;
 
 + (Deck *)create;
 

@@ -10,17 +10,15 @@ import Foundation
 
 open class Deck {
     var size: Int {
-        get { return self.remainingCards.count }
+        get { return self.cards.count }
     }
-    var remainingCards: Array<Card>
-    var dealtCards: Array<Card>
+    var cards: Array<Card>
 
     init() {
-        self.dealtCards = []
-        self.remainingCards = []
-        for suit in 0 ... numberOfSuits - 1 {
-            for rank in 0 ... numberOfRanks - 1 {
-                remainingCards.append(Card(suit: Suit(rawValue: suit)!, rank: Rank(rawValue: rank)!))
+        self.cards = []
+        for suit in 0..<numberOfSuits {
+            for rank in 0..<numberOfRanks {
+                cards.append(Card(suit: Suit(rawValue: suit)!, rank: Rank(rawValue: rank)!))
             }
         }
     }
@@ -31,9 +29,9 @@ open class Deck {
         
         let count = self.size
         var j = 0
-        for i in (1 ... count - 1).reversed() {
+        for i in (1..<count).reversed() {
             j = Int(arc4random_uniform(UInt32(i + 1)))
-            (remainingCards[j], remainingCards[i]) = (remainingCards[i], remainingCards[j])
+            (cards[j], cards[i]) = (cards[i], cards[j])
         }
     }
 
@@ -43,17 +41,16 @@ open class Deck {
             return nil
         default:
             let index = 0
-            let card = self.remainingCards[index]
-            self.remainingCards.remove(at: index)
-            self.dealtCards.append(card)
+            let card = self.cards[index]
+            self.cards.remove(at: index)
             return card
         }
     }
 
     func getCard(_ index: Int) -> Card? {
         switch index {
-        case let x where (1 ... self.size) ~= x:
-            return self.remainingCards[index]
+        case let x where (1...self.size) ~= x:
+            return self.cards[index]
         default:
             return nil
         }
@@ -62,7 +59,7 @@ open class Deck {
     var description: String {
         var descr = ""
         let size = self.size
-        for (index, card) in self.remainingCards.enumerated() {
+        for (index, card) in self.cards.enumerated() {
             descr += "Card \(index) of \(size): \(card.description)"
         }
         return descr

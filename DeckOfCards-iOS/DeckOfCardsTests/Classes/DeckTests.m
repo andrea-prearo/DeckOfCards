@@ -34,9 +34,9 @@
 
 - (void)testShuffle
 {
-	NSArray *cards1 = [self.deck.remainingCards copy];
+	NSArray *cards1 = [self.deck.cards copy];
 	[self.deck shuffle];
-	NSArray *cards2 = [self.deck.remainingCards copy];
+	NSArray *cards2 = [self.deck.cards copy];
 	XCTAssertFalse([cards1 isEqualToArray:cards2], @"Deck has not been shuffled");
 }
 
@@ -58,8 +58,8 @@
 	for (NSUInteger i = 0; i < count; i++) {
 		[self.deck dealOne];
 	}
-	XCTAssertThrowsSpecificNamed([self.deck dealOne], NSException, @"InvalidOperationException",
-															 @"All cards have been dealt");
+	XCTAssertThrowsSpecificNamed([self.deck dealOne], NSException,
+                                 @"InvalidOperationException", @"All cards have been dealt");
 }
 
 - (void)testSameCard

@@ -22,9 +22,9 @@ class DeckTests: XCTestCase {
     }
 
     func testShuffle() {
-        let cards1 = deck?.remainingCards
+        let cards1 = deck?.cards
         deck?.shuffle()
-        let cards2 = deck?.remainingCards
+        let cards2 = deck?.cards
         XCTAssertNotEqual(cards1!, cards2!, "Deck has not been shuffled")
     }
 
