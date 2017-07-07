@@ -14,10 +14,11 @@ spec = do
   describe "shuffle" $ do
     it "should shuffle all cards" $ do
       let deck = mkDeck
-      let cards1 = remainingCards deck
+      let cards1 = cards deck
       let deck' = shuffle deck
-      let cards2 = remainingCards deck'
+      let cards2 = cards deck'
       assertBool "card1 should differ from card2" (cards1 /= cards2)
+
   describe "dealOne" $ do
     it "should remove dealt cards" $ do
       let deck = mkDeck
@@ -29,6 +30,7 @@ spec = do
       assertBool "card1 should differ from card2" (fromJust card1 /= fromJust card2)
       (len0 - len1) `shouldBe` 1
       (len1 - len2) `shouldBe` 1
+
   describe "getCard" $ do
     it "should allow the inspect remaining cards" $ do
       let deck = mkDeck

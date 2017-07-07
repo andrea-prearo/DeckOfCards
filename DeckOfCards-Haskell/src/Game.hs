@@ -12,8 +12,8 @@ import Data.Maybe
 data GameState = GameState { deck :: Deck, card :: Maybe Card }
 
 instance Show GameState where
-   show (GameState deck card) | (size deck == 0) = show $ "All cards have been dealt"
-                              | otherwise = show $ "Dealt: " ++ (show $ fromJust card) ++ ". " ++ (show (length (dealtCards deck))) ++ " card(s) dealt. " ++ (show (size deck)) ++" remaining."
+   show (GameState deck card) | (size deck == 0) = show $ "Dealt: " ++ (show $ fromJust card) ++ ". " ++ "All cards have been dealt."
+                              | otherwise = show $ "Dealt: " ++ (show $ fromJust card) ++ ". " ++ (show (subtract (size deck) maxDeckSize)) ++ " card(s) dealt. " ++ (show (size deck)) ++" remaining."
 
 initGameState :: GameState
 initGameState = GameState {
