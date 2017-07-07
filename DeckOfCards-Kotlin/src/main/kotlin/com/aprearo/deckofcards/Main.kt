@@ -9,6 +9,6 @@ fun main(args: Array<String>) {
     for (i in 0 until size) {
         val card = deck.dealOne()
         println(
-            "Dealt: $card. ${deck.dealtCards.size} card(s) dealt. ${deck.size} remaining.")
+            "Dealt: $card. ${i+1} card(s) dealt. ${deck.size} remaining.")
     }
 }

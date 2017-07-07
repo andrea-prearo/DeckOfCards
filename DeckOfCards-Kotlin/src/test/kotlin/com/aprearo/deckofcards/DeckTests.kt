@@ -14,10 +14,10 @@ class DeckTests {
 
     @Test
     fun testShuffle() {
-        val cards1: List<Card> = deck!!.remainingCards
+        val cards1: List<Card> = deck!!.cards
         deck!!.shuffle()
-        val cards2: List<Card> = deck!!.remainingCards
-        assertEquals(cards1, cards2)
+        val cards2: List<Card> = deck!!.cards
+        assertNotEquals(cards1, cards2)
     }
 
     @Test
