@@ -5,9 +5,9 @@ A small playground to experiment with different languages and coding styles
 - Multiple languages (Object Oriented and Functional)
 - 100% unit test coverage
 
-## DeckOfCards-iOS
-*DeckOfCards* Objective-C implementation, located in ```DeckOfCards-iOS```.  
-See ```DeckOfCards-iOS/README.md``` for further details.
+## DeckOfCards-ObjC
+*DeckOfCards* Objective-C implementation, located in ```DeckOfCards-ObjC```.  
+See ```DeckOfCards-ObjC/README.md``` for further details.
 
 ## DeckOfCards-Python
 *DeckOfCards* Python implementation, located in ```DeckOfCards-Python```.  
