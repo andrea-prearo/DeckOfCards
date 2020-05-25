@@ -22,6 +22,8 @@ defmodule DeckOfCards.Deck do
 
     def deal(%{remaining: remaining, used: _} = deck, _) when remaining === [], do: deck
 
+    def deal(deck, count) when count === 0, do: deck
+
     def deal(deck, count) do
         new_deck = deal_one(deck)
         deal(new_deck, count - 1)

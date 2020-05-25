@@ -15,14 +15,14 @@ defmodule DeckOfCards.Game do
         |> log("Shuffled all cards.")
     end
 
-      defp log(deck, message) do
+    defp log(deck, message) do
         IO.puts message
         deck
-      end
+    end
 
-      defp log(card) do
+    defp log(card) do
         IO.puts "Dealt: #{inspect card}."
-      end
+    end
 end
 
 DeckOfCards.Game.play_with_deck()
