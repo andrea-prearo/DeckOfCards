@@ -1,6 +1,6 @@
 # *Deck of Cards* sample
 
-The project implements three main classes:  
+The project implements three main modules:  
 - `Card`, to model each individual card  
 - `Deck`, to model the deck as a `Card` container  
 - `Game`, to model the game logic  
