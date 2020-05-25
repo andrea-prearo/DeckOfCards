@@ -16,7 +16,7 @@ defmodule CardTest do
         assert card1 == card2
 
         card3 = %Card{suit: "♣", rank: "Q"}
-        assert card2 != card3
+        refute card2 == card3
     end
 
     test "get suit" do
