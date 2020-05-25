@@ -10,4 +10,4 @@ All code has been developed and tested using `Elixir 1.10.3`.
 Unit tests have been implemented using the [ExUnit](https://hexdocs.pm/ex_unit/ExUnit.html) framework.  
 Execute `mix test` to run the test suite.  
 
-An usage example has been provided and can be run with `iex -S mix`.
+An usage example has been provided and can be run with `mix deck_of_cards.play`.

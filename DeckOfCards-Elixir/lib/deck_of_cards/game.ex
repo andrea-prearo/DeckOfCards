@@ -24,5 +24,3 @@ defmodule DeckOfCards.Game do
         IO.puts "Dealt: #{inspect card}."
     end
 end
-
-DeckOfCards.Game.play_with_deck()
