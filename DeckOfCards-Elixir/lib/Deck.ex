@@ -3,31 +3,32 @@ defmodule DeckOfCards.Deck do
 
     @type deck :: [Card]
 
+    defstruct [:remaining, :used]
+
     def new do
-        for rank <- Card.ranks, suit <- Card.suits, do: %Card{suit: suit, rank: rank}
+        remaining = for rank <- Card.ranks, suit <- Card.suits, do: %Card{suit: suit, rank: rank}
+        %{remaining: remaining, used: []}
     end
 
-    def shuffle(deck) do
-        deck
+    def shuffle(%{remaining: remaining, used: used} = _) do
+        shuffled = remaining
         |> Enum.shuffle
+        %{remaining: shuffled, used: used}
     end
 
-    def deal_all(deck) do
-        deal(deck, Enum.count(deck), [])
+    def deal_all(%{remaining: remaining, used: _} = deck) do
+        deal(deck, Enum.count(remaining))
     end
 
-    def deal(deck, times) do
-        deal(deck, times, [])
+    def deal(%{remaining: remaining, used: _} = deck, _) when remaining === [], do: deck
+
+    def deal(deck, count) do
+        new_deck = deal_one(deck)
+        deal(new_deck, count - 1)
     end
 
-    defp deal(deck, count, cards) when count === 0, do: {deck, cards}
-
-    defp deal(deck, count, cards) do
-        {card, deck} = deal_one(deck)
-        deal(deck, count - 1, cards ++ List.wrap(card))
-    end
-
-    defp deal_one(deck) do
-        List.pop_at(deck, Enum.count(deck) - 1)
+    defp deal_one(%{remaining: remaining, used: used} = _) do
+        {card, new_remaining} = List.pop_at(remaining, Enum.count(remaining) - 1)
+        %{remaining: new_remaining, used: used ++ List.wrap(card)}
     end
 end
