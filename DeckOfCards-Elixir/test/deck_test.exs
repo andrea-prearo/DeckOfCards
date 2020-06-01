@@ -7,7 +7,7 @@ defmodule DeckTest do
         shuffled = deck
             |> Deck.shuffle
 
-        assert deck.remaining != shuffled.remaining
+        refute deck.remaining == shuffled.remaining
         assert deck.used == []
         assert shuffled.used == []
     end
